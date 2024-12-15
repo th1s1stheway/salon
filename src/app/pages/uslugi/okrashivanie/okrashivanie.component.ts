@@ -35,101 +35,101 @@ import { FooterComponent } from "../../../footer/footer.component";
                 <thead>
                     <tr>
                         <th>Название услуги</th>
-                        <th>Время</th>
-                        <th>Стоимость</th>
+                        <th class="time">Время</th>
+                        <th class="price">Стоимость</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>Массаж спины</td>
-                        <td>45 минут</td>
-                        <td>1 800 ₽</td>
+                        <td class="time">45 минут</td>
+                        <td class="price">1 800 ₽</td>
                     </tr>
                     <tr>
                         <td>Общий классический массаж</td>
-                        <td>60 минут</td>
-                        <td>2 200 ₽</td>
+                        <td class="time">60 минут</td>
+                        <td class="price">2 200 ₽</td>
                     </tr>
                     <tr>
                         <td>Общий классический массаж</td>
-                        <td>90 минут</td>
-                        <td>2 800 ₽</td>
+                        <td class="time">90 минут</td>
+                        <td class="price">2 800 ₽</td>
                     </tr>
                     <tr>
                         <td>Лимфодренажный массаж</td>
-                        <td>60 минут</td>
-                        <td>2 200 ₽</td>
+                        <td class="time">60 минут</td>
+                        <td class="price">2 200 ₽</td>
                     </tr>
                     <tr>
                         <td>Антицеллюлитный массаж</td>
-                        <td>60 минут</td>
-                        <td>2 400 ₽</td>
+                        <td class="time">60 минут</td>
+                        <td class="price">2 400 ₽</td>
                     </tr>
                     <tr>
                         <td>Комплексный массаж</td>
-                        <td>90 минут</td>
-                        <td>2 300 ₽</td>
+                        <td class="time">90 минут</td>
+                        <td class="price">2 300 ₽</td>
                     </tr>
                     <tr>
                         <td>Авторский массаж лица</td>
-                        <td>90 минут</td>
-                        <td>2 300 ₽</td>
+                        <td class="time">90 минут</td>
+                        <td class="price">2 300 ₽</td>
                     </tr>
                     <tr>
                         <td>Классический массаж перчатками с микротоком</td>
-                        <td>20 минут</td>
-                        <td>2 300 ₽</td>
+                        <td class="time">20 минут</td>
+                        <td class="price">2 300 ₽</td>
                     </tr>
                     <tr>
                         <td>Глубокий массаж перчатками с микротоком</td>
-                        <td>40 минут</td>
-                        <td>2 300 ₽</td>
+                        <td class="time">40 минут</td>
+                        <td class="price">2 300 ₽</td>
                     </tr>
 
                     <tr>
                         <td>Массаж спины</td>
-                        <td>45 минут</td>
-                        <td>1 800 ₽</td>
+                        <td class="time">45 минут</td>
+                        <td class="price">1 800 ₽</td>
                     </tr>
                     <tr>
                         <td>Общий классический массаж</td>
-                        <td>60 минут</td>
-                        <td>2 200 ₽</td>
+                        <td class="time">60 минут</td>
+                        <td class="price">2 200 ₽</td>
                     </tr>
                     <tr>
                         <td>Общий классический массаж</td>
-                        <td>90 минут</td>
-                        <td>2 800 ₽</td>
+                        <td class="time">90 минут</td>
+                        <td class="price">2 800 ₽</td>
                     </tr>
                     <tr>
                         <td>Лимфодренажный массаж</td>
-                        <td>60 минут</td>
-                        <td>2 200 ₽</td>
+                        <td class="time">60 минут</td>
+                        <td class="price">2 200 ₽</td>
                     </tr>
                     <tr>
                         <td>Антицеллюлитный массаж</td>
-                        <td>60 минут</td>
-                        <td>2 400 ₽</td>
+                        <td class="time">60 минут</td>
+                        <td class="price">2 400 ₽</td>
                     </tr>
                     <tr>
                         <td>Комплексный массаж</td>
-                        <td>90 минут</td>
-                        <td>2 300 ₽</td>
+                        <td class="time">90 минут</td>
+                        <td class="price">2 300 ₽</td>
                     </tr>
                     <tr>
                         <td>Авторский массаж лица</td>
-                        <td>90 минут</td>
-                        <td>2 300 ₽</td>
+                        <td class="time">90 минут</td>
+                        <td class="price">2 300 ₽</td>
                     </tr>
                     <tr>
                         <td>Классический массаж перчатками с микротоком</td>
-                        <td>20 минут</td>
-                        <td>2 300 ₽</td>
+                        <td class="time">20 минут</td>
+                        <td class="price">2 300 ₽</td>
                     </tr>
                     <tr>
                         <td>Глубокий массаж перчатками с микротоком</td>
-                        <td>40 минут</td>
-                        <td>2 300 ₽</td>
+                        <td class="time">40 минут</td>
+                        <td class="price">2 300 ₽</td>
                     </tr>
                 </tbody>
         </table>

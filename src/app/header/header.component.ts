@@ -19,7 +19,8 @@ import { RouterOutlet } from '@angular/router';
         <ul>
           <li><a href="" routerLink="/" routerLinkActive="active">Главная</a></li>
           <li><a routerLink="/uslugi">Услуги</a></li>
-          <li><a routerLink="/academy" routerLinkActive="active">Академия маникюра</a></li>
+          <li><a href="/komanda" routerLink="/contact">Команда</a></li>
+          <li><a href="/academy" routerLink="/academy" routerLinkActive="active">Академия маникюра</a></li>
           <li><a href="/nashi-raboti" routerLink="/nashi-raboti" routerLinkActive="active">Наши работы</a></li>
           <li><a routerLink="/blog">О салоне</a></li>
           <li><a routerLink="/contact">Контакты</a></li>

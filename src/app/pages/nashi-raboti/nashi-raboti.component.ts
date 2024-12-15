@@ -2,11 +2,18 @@ import { Component } from '@angular/core';
 import { HeaderComponent } from "../../header/header.component";
 import { FooterComponent } from "../../footer/footer.component";
 import { ImageViewerComponent } from "../../image-viewer/image-viewer.component";
+import { ImageViewerAcademyComponent } from "../../image-viewer-academy/image-viewer-academy.component";
+import { CommonModule } from '@angular/common';
+import { ImageViewer2Component } from "../../viewers-nashi-raboti/image-viewer2/image-viewer2.component";
+import { ImageViewer1Component } from "../../viewers-nashi-raboti/image-viewer1/image-viewer1.component";
+import { ImageViewer3Component } from "../../viewers-nashi-raboti/image-viewer3/image-viewer3.component";
+import { ImageViewer4Component } from "../../viewers-nashi-raboti/image-viewer4/image-viewer4.component";
+import { ImageViewer5Component } from "../../viewers-nashi-raboti/image-viewer5/image-viewer5.component";
 
 @Component({
   selector: 'app-nashi-raboti',
   standalone: true,
-  imports: [HeaderComponent, FooterComponent, ImageViewerComponent],
+  imports: [HeaderComponent, FooterComponent, ImageViewerComponent, ImageViewerAcademyComponent, CommonModule, ImageViewer2Component, ImageViewer1Component, ImageViewer3Component, ImageViewer4Component, ImageViewer5Component],
   template: `
     <div class="wrapper">
       <app-header />
@@ -30,32 +37,42 @@ import { ImageViewerComponent } from "../../image-viewer/image-viewer.component"
         <div class="container">
           <div class="primeri-rabot__cards">
             <div class="primeri-rabot__card">
-              Женская стрижка
+              <button (click)="selectTab(0)">Женская стрижка</button>
             </div>
             <div class="primeri-rabot__card">
-              Окрашивание
+              <button (click)="selectTab(1)">Окрашивание и уход за волосами</button>
             </div>
             <div class="primeri-rabot__card">
-              Уход за волосами
+              <button (click)="selectTab(2)">Маникюр</button>
             </div>
             <div class="primeri-rabot__card">
-              Маникюр
+              <button (click)="selectTab(3)">Педикюр</button>
             </div>
             <div class="primeri-rabot__card">
-              Педикюр
-            </div>
-            <div class="primeri-rabot__card">
-              Мужская стрижка
+              <button (click)="selectTab(4)">Мужская стрижка</button>
             </div>
           </div>
+          <div class="primeri-rabot__slider">
+          <div class="content">
+            <div *ngIf="selectedTab === 0"><app-image-viewer1 /></div>
+            <div *ngIf="selectedTab === 1"><app-image-viewer2 /> </div>
+            <div *ngIf="selectedTab === 2"><app-image-viewer3 /></div>
+            <div *ngIf="selectedTab === 3"><app-image-viewer4 /></div>
+            <div *ngIf="selectedTab === 4"><app-image-viewer5 /></div>
+          </div>
+        </div>
         </div>
       </div>
-      <app-image-viewer />
       <app-footer />
     </div>
   `,
   styleUrl: './nashi-raboti.component.scss'
 })
 export class NashiRabotiComponent {
+  selectedTab: number = 0; // Индекс выбранной вкладки (по умолчанию первая)
 
+  // Метод для выбора вкладки
+  selectTab(index: number) {
+    this.selectedTab = index; // Устанавливаем индекс выбранной вкладки
+  }
 }

@@ -21,10 +21,12 @@
                 display: flex;
                 gap: 20px;
                 align-items: center;
+                img {
+                }
                 h2{
                     //width: 142px;
                     max-width: 90%; //занимает почти всю ширину, чтобы не слипался с правой стороной
-                    height: 63px;
+                    height: auto;
                     
                     font-family: 'Bebas Neue';
                     font-style: normal;

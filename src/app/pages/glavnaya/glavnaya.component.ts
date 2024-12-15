@@ -8,13 +8,18 @@ import { ImageSliderComponent } from "../../image-slider/image-slider.component"
 import { ImageViewerComponent } from "../../image-viewer/image-viewer.component";
 import { ImageSliderTopComponent } from "../../image-slider-top/image-slider-top.component";
 import { ImageSliderPortfolioComponent } from "../../image-slider-portfolio/image-slider-portfolio.component";
+import { ImageSlider1Component } from "../../image-sliders-glavnaya/image-slider1/image-slider1.component";
+import { ImageSlider3Component } from "../../image-sliders-glavnaya/image-slider3/image-slider3.component";
+import { ImageSlider2Component } from "../../image-sliders-glavnaya/image-slider2/image-slider2.component";
+import { ImageSlider4Component } from "../../image-sliders-glavnaya/image-slider4/image-slider4.component";
+import { ImageSlider5Component } from "../../image-sliders-glavnaya/image-slider5/image-slider5.component";
 
 register();
 
 @Component({
   selector: 'app-glavnaya',
   standalone: true,
-  imports: [HeaderComponent, CommonModule, FooterComponent, AccordeonComponent, ImageSliderComponent, ImageViewerComponent, ImageSliderTopComponent, ImageSliderPortfolioComponent,],
+  imports: [HeaderComponent, CommonModule, FooterComponent, AccordeonComponent, ImageSliderComponent, ImageViewerComponent, ImageSliderTopComponent, ImageSliderPortfolioComponent, ImageSlider1Component, ImageSlider3Component, ImageSlider2Component, ImageSlider4Component, ImageSlider5Component],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   template: `
   <div class="wrapper">
@@ -46,26 +51,29 @@ register();
         <div class="portfolio__title title"><h2>Работы наших мастеров</h2></div>
         <div class="portfolio__cards">
           <div class="portfolio__card">
-            Женская стрижка
+            <button (click)="selectTab(0)">Женская стрижка</button>
           </div>
           <div class="portfolio__card">
-            Окрашивание
+            <button (click)="selectTab(1)">Окрашивание и уход за волосами</button>
           </div>
           <div class="portfolio__card">
-            Уход за волосами
+            <button (click)="selectTab(2)">Маникюр</button>
           </div>
           <div class="portfolio__card">
-            Маникюр
+            <button (click)="selectTab(3)">Педикюр</button>
           </div>
           <div class="portfolio__card">
-            Педикюр
-          </div>
-          <div class="portfolio__card">
-            Мужская стрижка
+            <button (click)="selectTab(4)">Мужская стрижка</button>
           </div>
         </div>
         <div class="portfolio__slider">
-          <app-image-slider-portfolio />
+          <div class="content">
+            <div *ngIf="selectedTab === 0"><app-image-slider1 /></div>
+            <div *ngIf="selectedTab === 1"><app-image-slider2 /></div>
+            <div *ngIf="selectedTab === 2"><app-image-slider3/></div>
+            <div *ngIf="selectedTab === 3"><app-image-slider4/></div>
+            <div *ngIf="selectedTab === 4"><app-image-slider5/></div>
+          </div>
         </div>
       </div>
     </div>
@@ -245,35 +253,11 @@ register();
   `,
 })
 export class GlavnayaComponent {
-  images = [
-    { src: 'assets/1.png', alt: 'Image 1' },
-    { src: 'assets/2.png', alt: 'Image 2' },
-    { src: 'assets/3.png', alt: 'Image 3' },
-    { src: 'assets/4.png', alt: 'Image 4' },
-    { src: 'assets/5.png', alt: 'Image 5' },
-    { src: 'assets/6.png', alt: 'Image 6' },
-  ];
-  imagesPortfolio = [
-    { src: 'assets/portfolio/test_portfolio.png', alt: 'Image 1',
-      master: 'Мастер Анастасия Попова',
-     },
-    { src: 'assets/portfolio/test_portfolio.png', alt: 'Image 2' },
-    { src: 'assets/portfolio/test_portfolio.png', alt: 'Image 3' },
-    { src: 'assets/portfolio/test_portfolio.png', alt: 'Image 4' }, 
-    { src: 'assets/portfolio/test_portfolio.png', alt: 'Image 5' },
-    { src: 'assets/portfolio/test_portfolio.png', alt: 'Image 6' },
-  ];
-  imagesTeam = [
-    { src: 'assets/portfolio/test_portfolio.png', alt: 'Image 1',
-      master: 'Мастер Анастасия Попова',
-      speciality: 'Парикмахер',
-     },
-    { src: 'assets/portfolio/test_portfolio.png', alt: 'Image 2' },
-    { src: 'assets/portfolio/test_portfolio.png', alt: 'Image 3' },
-    { src: 'assets/portfolio/test_portfolio.png', alt: 'Image 4' }, 
-    { src: 'assets/portfolio/test_portfolio.png', alt: 'Image 5' },
-    { src: 'assets/portfolio/test_portfolio.png', alt: 'Image 6' },
-  ];
+  selectedTab: number = 0; // Индекс выбранной вкладки (по умолчанию первая)
 
+  // Метод для выбора вкладки
+  selectTab(index: number) {
+    this.selectedTab = index; // Устанавливаем индекс выбранной вкладки
+  }
 }
 

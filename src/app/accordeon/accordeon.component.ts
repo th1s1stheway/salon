@@ -14,33 +14,33 @@ export class AccordeonComponent {
   // Содержимое для отображения
   contents = [
     {
-      title: 'Заголовок 1',
-      image: 'assets/icons/uslugi_massage.png',
+      title: 'Женские стрижки и укладки',
+      image: 'assets/icons/1.png',
       text: 'Это текст для 1 блока.'
     },
     {
-      title: 'Заголовок 2',
-      image: 'https://via.placeholder.com/150?text=Image+2',
+      title: 'Окрашивание  и уход',
+      image: 'assets/icons/2.png',
       text: 'Это текст для второго блока.'
     },
     {
-      title: 'Заголовок 3',
-      image: 'https://via.placeholder.com/150?text=Image+3',
+      title: 'Массаж',
+      image: 'assets/icons/3.png',
       text: 'Это текст для третьего блока.'
     },
     {
-      title: 'Заголовок 2',
-      image: 'https://via.placeholder.com/150?text=Image+2',
+      title: 'Маникюр',
+      image: 'assets/icons/4.png',
       text: 'Это текст для второго блока.'
     },
     {
-      title: 'Заголовок 2',
-      image: 'https://via.placeholder.com/150?text=Image+2',
+      title: 'Педикюр',
+      image: 'assets/icons/5.png',
       text: 'Это текст для второго блока.'
     },
     {
-      title: 'Заголовок 2',
-      image: 'https://via.placeholder.com/150?text=Image+2',
+      title: 'Мужские стрижки',
+      image: 'assets/icons/6.png',
       text: 'Это текст для второго блока.'
     },
   ];
