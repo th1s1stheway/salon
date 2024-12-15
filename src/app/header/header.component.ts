@@ -27,7 +27,7 @@ import { RouterOutlet } from '@angular/router';
         </ul>
       </nav>
       <span>г. Красноярк, ул. Красноярский рабочий 160, стр.1</span>
-      <button (click)="onBookOnline()">Онлайн запись</button>
+      <button>Онлайн запись</button>
     </header>
 
     <router-outlet></router-outlet>

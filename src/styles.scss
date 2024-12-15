@@ -153,23 +153,30 @@ header {
 
 footer {
     .container {
-        width: 1399px;
-        height: 820px;
+        max-width: 1399px;
+        min-height: 820px;
         background: linear-gradient(122.35deg, #1A1A1A 1.32%, #183500 35.76%, #101010 69.1%, #090909 110.65%);
         border-radius: 10px;
-        padding: 59px 40px 37px 40px;
+        padding: 59px 40px 87px 40px;
     }
     .footer__top {
         .footer__row { 
             display: flex;
-            gap: 20px;
+            justify-content: space-between;
+
             .footer__column {
+                display: flex;
+                flex-direction: column;
+                
                 .footer__item-logo {
-                    margin-right: 146px;
+                    .footer__item {
+                    }
+
                     .footer__logo {
+                        margin-right: 146px;
                         img{
-                            width: 133px;
-                            height: 87px;    
+                            max-width: 133px;
+                            min-height: 87px;    
                         }
                     }
                     .footer__icons {
@@ -225,11 +232,12 @@ footer {
                 }
                 
                 .footer__item {
+                    
                     .footer__title {
                         padding-bottom: 20px;
                         h2{
                             /* Услуги */
-                            width: 315px;
+                            min-width: 315px;
                             height: 38px;
                             
                             font-family: 'Bebas Neue';
@@ -246,7 +254,7 @@ footer {
                     }
                     .footer__body {
                         ul{
-                            width: 160px;
+                            max-width: 315px;
                             height: 154px;
                             display: flex;
                             flex-direction: column;
@@ -274,6 +282,7 @@ footer {
         .footer__row-contact {
             display: flex;
             gap: 115px;
+            align-items: baseline;
             .footer__column-contact {
                 .footer__item-contact {
                     p{
