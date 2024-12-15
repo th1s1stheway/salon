@@ -29,7 +29,7 @@ register();
         <div class="top__left">
           <div class="top__title banner-title"><h2>Салон красоты в Красноярске</h2></div>
           <div class="top__subtitle"><p>Место, где вы за один день сможете преобразиться и расслабиться на массаже</p></div>
-          <button>Онлайн запись</button>
+          <button>Записаться онлайн</button>
           <div class="top__icons icons">
             <img src="assets/icons/Женская_стрижка_иконка.png" alt="Icon 1" class="icon">
             <img src="assets/icons/Окрашевание_иконка.png" alt="Icon 2" class="icon">
