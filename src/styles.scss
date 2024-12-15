@@ -309,6 +309,11 @@ footer {
             }
         }
     }
+    .footer__map {
+        margin-top: 45px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
 }
 
 // Начало редактирования главной
@@ -761,11 +766,11 @@ footer {
         display: flex; /* Используем flexbox для размещения элементов в строку */
         gap: 50px;
         animation: stroka 20s linear infinite; /* Анимация */
-        
+        align-items: center;
         .stroka__item {
             img{
                 max-width: 100px;
-                max-height: 30px;
+                max-height: 50px;
             }
         }
     }

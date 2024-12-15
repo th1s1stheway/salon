@@ -100,6 +100,8 @@ import { Component } from '@angular/core';
         </div>
       </div>
       <div class="footer__map">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Affaf14f3c61d7bb598293d6e8aae48631b1e5f3bfde91370197fa89bc78ee87c&amp;source=constructor" width="100%" height="302" frameborder="0">
+        </iframe>
         <!-- Здесь будет Яндекс карта -->
       </div>
     </div>
