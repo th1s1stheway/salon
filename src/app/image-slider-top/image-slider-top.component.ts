@@ -10,8 +10,8 @@ import { Component } from '@angular/core';
 })
 export class ImageSliderTopComponent {
   images = [
-    { src: 'assets/1.png', alt: 'Image 1' },
-    { src: 'assets/2.png', alt: 'Image 2' },
+    { src: 'assets/2.png', alt: 'Image 1' },
+    { src: 'assets/1.png', alt: 'Image 2' },
     { src: 'assets/3.png', alt: 'Image 3' },
     { src: 'assets/4.png', alt: 'Image 4' },
     { src: 'assets/5.png', alt: 'Image 5' },
