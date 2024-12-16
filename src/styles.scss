@@ -116,7 +116,7 @@ header {
     }
     span {
         /* г. Красноярк, ул. Красноярский рабочий 160, стр.1 */
-        max-width: 250px;
+        max-width: 260px;
         height: 38px;
 
         font-family: 'Inter';
@@ -164,6 +164,9 @@ header {
 }
 
 footer {
+    a{
+        color: #FFFFFF;
+    }
     .container {
         max-width: 1399px;
         min-height: 820px;
@@ -231,6 +234,9 @@ footer {
                         color: rgba(255, 255, 255, 0.5);
                     }
                     .footer__politika {
+                        a{
+                            font-size: 12px;
+                        }
                         padding-top: 5px;
                         /* Политика конфиденциальности */
                         width: 100%;

@@ -19,11 +19,11 @@ import { Component } from '@angular/core';
                   <img src="assets/footer__icons/whatsApp.svg" alt="">
                 </div>
                 <div class="footer__icon">
-                  <a href="https://vk.com/nano_prof_krsk"><img src="assets/footer__icons/VK.svg" alt=""></a>
+                  <a href="https://vk.com/nano_prof_krsk" target="_blank" ><img src="assets/footer__icons/VK.svg" alt=""></a>
                 </div>
               </div>
               <div class="footer__author">Ⓒ ИП Шаполвалова, 2024</div>
-              <div class="footer__politika">Политика конфиденциальности</div>
+              <div class="footer__politika"><a href="/privacy-policy" target="_blank" >Политика конфиденциальности</a></div>
             </div>
           </div>
           <div class="footer__column"> 
