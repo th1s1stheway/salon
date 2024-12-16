@@ -50,6 +50,7 @@ import { FooterComponent } from "../../footer/footer.component";
             </div>
             <div class="cards-komanda__button">
               <button class="button-green">Записаться на приём</button>
+              <!-- <a class="button-green">Записаться на приём</a> -->
             </div>
           </div>
           <div class="cards-komanda__item">

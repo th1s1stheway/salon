@@ -120,7 +120,8 @@ register();
             </div>
           </div>
           <div class="academy__right">
-            <button class="button-yellow">Подробнее о курсах</button> 
+            <!-- <button class="button-yellow">Подробнее о курсах</button> -->
+            <a href="/academy" class="button-yellow">Подробнее о курсах</a>
           </div>
         </div>
 
@@ -136,7 +137,7 @@ register();
     </div>
     <div class="why">
       <div class="container">
-        <div class="why__title title"><h2>Почему клиенты выбирают 
+        <div class="why__title title"><h2 id="about" >Почему клиенты выбирают 
         Салон красоты «Krasa» </h2></div>
         <div class="why__body">
           <div class="why__left"></div>

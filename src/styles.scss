@@ -44,6 +44,19 @@ img{vertical-align: top;}
 h1,h2, h3, h4, h5, h6{font-style: inherit; font-weight: 400;}
 /* You can add global styles to this file, and also import other style files */
 //@import 'swiper/swiper-bundle.css';
+html {
+    scroll-behavior: smooth;
+}
+a{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 145%;
+    /* or 23px */
+
+    color: #333333;
+}
 .wrapper{
     max-width: 1440px; /* Максимальная ширина 1440px */
     width: 100%; /* Ширина 100% для адаптивности */
@@ -191,6 +204,11 @@ footer {
     
                             background: #274D07;
                             border-radius: 10px;
+                            a{
+                                display: flex; /* Включаем Flexbox для иконки */
+                                justify-content: center; /* Центрируем изображение по горизонтали */
+                                align-items: center; /* Центрируем изображение по вертикали */
+                            }
                             img{
                                 
                             }
@@ -347,10 +365,8 @@ footer {
         .top__subtitle {
             margin-left: 40px;
             margin-top: 14px;
-            /* Место, где вы за один день сможете преобразиться и расслабиться на массаже */
-
             
-            width: 382px;
+            max-width: 382px;
             height: 46px;
 
             font-family: 'Inter';
@@ -361,8 +377,6 @@ footer {
             /* or 23px */
 
             color: #FFFFFF;
-
-
         }
         button {        
             margin-top: 20px;
@@ -418,6 +432,7 @@ footer {
 }
 
 .portfolio {
+    margin-top: 83px;
     .container {
     }
     .portfolio__title {
@@ -658,8 +673,14 @@ footer {
             border-radius: 10px;
             
             button {
-                /* Rectangle 53 */
-                width: 429px;
+                //width: 429px;
+                width: 90%;
+                height: 55px;
+                margin-bottom: 20px;
+            }
+            a {
+                //width: 429px;
+                width: 90%;
                 height: 55px;
                 margin-bottom: 20px;
             }
@@ -907,7 +928,13 @@ footer {
                     justify-content: center; //для доп центрирования
                     align-items: center;
                 button {
-                    width: 357px;
+                    //width: 357px;
+                    width: 92%;
+                    height: 71px;
+                }
+                a{
+                    //width: 357px;
+                    width: 92%;
                     height: 71px;
                 }
             }
@@ -1040,7 +1067,13 @@ footer {
         justify-content: center; //для доп центрирования
         align-items: center;
     button {
-        width: 358px;
+        //width: 358px;
+        width: 93%;
+        height: 71px;
+    }
+    a {
+        //width: 358px;
+        width: 93%;
         height: 71px;
     }
 }
@@ -1172,9 +1205,7 @@ footer {
         }
         .uslugi-prototype__subtitle {
             margin-left: 40px;
-            margin-top: 14px;
-            /* Место, где вы за один день сможете преобразиться и расслабиться на массаже */
-    
+            margin-top: 14px; 
             
             max-width: 382px;
             height: 46px;
@@ -1290,7 +1321,7 @@ footer {
 
 
 .title {
-    min-width: 245px; //изменить (из-за fz 100px)
+    min-width: 245px;
     min-height: 125px;
 
     display: flex;
@@ -1306,6 +1337,25 @@ footer {
         /* identical to box height, or 125px */
         text-align: center;
         text-transform: uppercase;
+
+        color: #333333;
+    }
+}
+.subtitle {
+    //min-width: 245px;
+    //min-height: 125px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    p{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 145%;
+        /* or 23px */
 
         color: #333333;
     }
@@ -1342,16 +1392,12 @@ footer {
 }
 
 .button-yellow{
-        /* Frame 18 */
-
-        /* Auto layout */
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         padding: 20px 35px;
         gap: 10px;
-
     
         background: #F7CC20;
         border-radius: 10px;
@@ -1374,9 +1420,19 @@ footer {
         flex-grow: 0;
 
 }
+.button-yellow:active{
+    /*Эффект при нажатии*/
+    background: #274D07;
+    color: #FFFFFF;
+}
 
 .button-green{
-
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 35px;
+    gap: 10px;
 
     background: #274D07;
     border-radius: 10px;
@@ -1391,8 +1447,11 @@ footer {
     text-align: center;
 
     color: #FFFFFF;
-
-
+}
+.button-green:active{
+    /*Эффект при нажатии*/
+    background: #F7CC20;
+    color: #333333;
 }
 
 .icons {

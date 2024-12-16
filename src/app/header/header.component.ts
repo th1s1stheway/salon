@@ -18,12 +18,12 @@ import { RouterOutlet } from '@angular/router';
       <nav>
         <ul>
           <li><a href="" routerLink="/" routerLinkActive="active">Главная</a></li>
-          <li><a routerLink="/uslugi">Услуги</a></li>
+          <li><a href="#uslugi">Услуги</a></li>
           <li><a href="/komanda" routerLink="/contact">Команда</a></li>
           <li><a href="/academy" routerLink="/academy" routerLinkActive="active">Академия маникюра</a></li>
           <li><a href="/nashi-raboti" routerLink="/nashi-raboti" routerLinkActive="active">Наши работы</a></li>
-          <li><a routerLink="/blog">О салоне</a></li>
-          <li><a routerLink="/contact">Контакты</a></li>
+          <li><a href="#about">О салоне</a></li>
+          <li><a href="#contact">Контакты</a></li>
         </ul>
       </nav>
       <span>г. Красноярк, ул. Красноярский рабочий 160, стр.1</span>

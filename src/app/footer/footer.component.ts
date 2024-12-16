@@ -19,7 +19,7 @@ import { Component } from '@angular/core';
                   <img src="assets/footer__icons/whatsApp.svg" alt="">
                 </div>
                 <div class="footer__icon">
-                  <img src="assets/footer__icons/VK.svg" alt="">
+                  <a href="https://vk.com/nano_prof_krsk"><img src="assets/footer__icons/VK.svg" alt=""></a>
                 </div>
               </div>
               <div class="footer__author">Ⓒ ИП Шаполвалова, 2024</div>
@@ -80,7 +80,7 @@ import { Component } from '@angular/core';
         
         </div>
       </div>
-      <div class="footer__contact">
+      <div class="footer__contact" id="contact">
         <div class="footer__row-contact">
           <div class="footer__column-contact">
             <div class="footer__item-contact">
