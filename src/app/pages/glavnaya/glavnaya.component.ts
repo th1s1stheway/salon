@@ -135,9 +135,9 @@ register();
         </div>
       </div>
     </div>
-    <div class="why">
+    <div id="about" class="why">
       <div class="container">
-        <div class="why__title title"><h2 id="about" >Почему клиенты выбирают 
+        <div class="why__title title"><h2>Почему клиенты выбирают 
         Салон красоты «Krasa» </h2></div>
         <div class="why__body">
           <div class="why__left"></div>
